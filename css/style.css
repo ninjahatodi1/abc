@@ -1,0 +1,74 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+   
+ 
+    body {
+      background-color: coral;
+      font-family: cursive;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .glow {
+      font-size: 80px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6b000, 0 0 40px #e6cf00, 0 0 50px #e69d00, 0 0 40px #e6c400, 0 0 70px #e6c400;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ffe44d, 0 0 40px #ffed4d, 0 0 50px #fff34d, 0 0 60px #ffd04d, 0 0 70px #ffd54d, 0 0 80px #ffd54d;
+      }
+    }
+    #crackers{
+       /* display: none; */
+    }
+    .responsive {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+.container{
+   margin: auto;
+   margin-top: 3rem;
+   padding: 2rem;
+   background-color: rgb(51, 18, 66);
+   border-radius: 10px;
+}
+
+
+    .crackers{
+      display: flex;
+      justify-content: center;
+      align-items: center;   
+      text-align: center;  
+       margin: 0.6rem 0;
+    }
+
+   .btn{
+      display: inline-block;
+      background-color: blueviolet;
+      padding: 0.5rem 1rem;
+      font-size: 1.3rem;
+      text-align: center;
+      color: white;
+      border-radius: 5px;
+      border: 0;
+      margin-top: 5px;
+   }
+
+   #h1{
+      color: white;
+      margin: 0.7rem;
+   }
